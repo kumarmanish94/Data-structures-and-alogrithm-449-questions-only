@@ -1,1 +1,43 @@
+logic:- input= 0,1,2,0,1,2
+        output= 0,0,1,1,2,2
+suppose this is variable: b0
+                 b0++, b1++,b2++
+                 b0=2, b1=2, b2=2
+         for(i=0; i<b0; i++)
+            {
+             a[k]=0
+               k++;
+            }
+        for(i=0; i<b1; i++)
+             a[k]=1
+              k++;
+         }
+       for(i=0; i<b2; i++)
+         {
+        a[k]=2
+         k++;
+     }
 
+
+--------------------------------------------------------------------------------------------------------
+codes
+4. given an array which consists of only 0,1 and 2 sort the array without using any sorting alg.
+sol- public class Array012{
+    public static void main(String []args){
+    in a[]={ 1,0,2,1,0,1,0};
+    int b0=0, b1=0, b2=0
+  for(int i=0; i<a.length; i++){
+  if(a[i]==0) b0++;
+  else if(a[i]==1) b1++;
+else
+b2++;
+}
+  int k=0
+for(int i=0; i<b0; i++) a[k++]=0;
+for(int i=0; i<b1; i++) a[k++]=1;
+for(int i=0; i<b2; i++) a[k++]=2;
+for(int i=0; i<a.length; i++){
+System.out.print(a[1]+"");
+}
+}
+}
