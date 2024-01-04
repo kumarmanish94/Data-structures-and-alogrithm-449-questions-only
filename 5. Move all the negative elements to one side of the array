@@ -17,28 +17,31 @@ a[i++]=t[k]
 =======================================================================
 codes
 -----------
-public class NegOneSide{
-static void rearrange(int a[]){
-int[]t=new int[a,length];
-int j=0;
-for(int i=0; i<a.lenth; i++){
-if(a[i]>=0)
-t[j++]=a[i];
-if(j==a.length || j==0)
-return; 
-}
-for(int i=0; i<a.length; i++){
-if(a[i]<0)
-t[j++]=a[i];
-}
-for(int i=0; i<a.length; i++){
-a[i]=t[i];
-}
-}
-public static voiid main(String []args){
-int a[]={1,-1,3,2,-7,-5,-11);
-for(int i=0; i<a.length; i++)
-System.out.print(a[i]+"");
-}
-}
+public class NegOneSide {
+    static void rearrange(int a[]) {
+        int[] t = new int[a.length];
+        int j = 0;
+
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] >= 0)
+                t[j++] = a[i];
+        }
+
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] < 0)
+                t[j++] = a[i];
+        }
+
+        for (int i = 0; i < a.length; i++) {
+            a[i] = t[i];
+        }
+    }
+
+    public static void main(String[] args) {
+        int a[] = {1, -1, 3, 2, -7, -5, -11};
+        rearrange(a);
+
+        for (int i = 0; i < a.length; i++)
+            System.out.print(a[i] + " ");
+    }
 }
